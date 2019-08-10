@@ -15,13 +15,13 @@ export class QueryBuilderService {
    *
    * @param {string} query (path de api)
    * @param {string} type  (tipo de verbo)
-   * @param {any} data  (variables por post)
+   * @param {any} data  (variables por post) default {}
    * @return {any}
    * @author Ruben Hernandez Jimenez
    *
    */
 
-  public connect<T>(query: string, type: string, data:any): any {
+  public connect<T>(query: string, type: string, data:any = {}): any {
 
     /*
     |-------------------------------------------------------
