@@ -56,7 +56,7 @@ export class Tab1Page {
 
       setTimeout(()=>{// redirijimos a pantalla
         this.router.navigate(['/tabs/tab1/tab1-contenido',data.id]);
-      }, 1000);
+      }, 700);
       
     }
   }
