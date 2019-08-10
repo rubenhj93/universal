@@ -27,15 +27,19 @@
 
 
 ion-content {
-    --ion-background-color: #F3F3F3;
+    color: #FFF !important;
 }
 
 ion-toolbar {
     --background: #24292E !important;
-    color: #FFF;
+    color: #FFF !important
 }
 
 ion-tab-bar{
     --background: #24292E !important;
-    color: #FFF;
+    color: #FFF !important
+}
+
+.white{
+    color: #FFF !important;
 }

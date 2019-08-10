@@ -21,7 +21,6 @@ export class ContentPage implements OnInit {
 
     this.activatedRoute.params.subscribe( (params:any) =>{
       this._storage.getNews().then( (data:any) =>{
-        console.log(data,'lo que obtiene');
         this.content = data;
       });
     });

@@ -1,17 +1,17 @@
-<ion-header>
+<ion-header no-border>
   <ion-toolbar>
     <ion-title>
-      UNIVERSAL HOME
+      EL UNIVERSAL
     </ion-title>
   </ion-toolbar>
 </ion-header>
 
-<ion-content>
-  <ion-card class="welcome-card" *ngFor="let card of dataHome" (click)="goTo(card)">
+<ion-content color="dark">
+  <ion-card class="welcome-card" *ngFor="let card of dataHome" style="border: solid 1px #fff;" (click)="goTo(card)">
     <img [src]="card.thumbnail" alt="" />
     <ion-card-header>
-      <ion-card-subtitle>{{ card?.section }}</ion-card-subtitle>
-      <ion-card-title>{{ card?.title }}</ion-card-title>
+      <ion-card-subtitle><p class="white">{{ card?.section }}</p></ion-card-subtitle>
+      <ion-card-title> <p class="white">{{ card?.title }}</p></ion-card-title>
     </ion-card-header>
     <ion-card-content>
         {{ card?.summary }}

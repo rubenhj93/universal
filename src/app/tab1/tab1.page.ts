@@ -52,9 +52,12 @@ export class Tab1Page {
 
   public goTo(data:any):void{
 
-    console.log(data,'lo que va a guardar');
     if(this._storageService.saveNews(data)){
-      this.router.navigate(['/tabs/tab1/tab1-contenido',data.id]);
+
+      setTimeout(()=>{// redirijimos a pantalla
+        this.router.navigate(['/tabs/tab1/tab1-contenido',data.id]);
+      }, 1000);
+      
     }
   }
 
