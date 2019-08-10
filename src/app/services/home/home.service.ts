@@ -8,7 +8,7 @@ import { map } from 'rxjs/operators';
 })
 export class HomeService {
 
-  public APIS_HOME:any
+  private APIS_HOME:any
 
   constructor( private _queryBuilderService: QueryBuilderService ) { 
 
