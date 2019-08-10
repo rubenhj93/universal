@@ -8,13 +8,28 @@
 
 <ion-content>
   <ion-card class="welcome-card" *ngFor="let card of dataHome">
-    <img src="/assets/shapes.svg" alt="" />
+    <img [src]="card.thumbnail" alt="" />
     <ion-card-header>
-      <ion-card-subtitle>Subtirulo</ion-card-subtitle>
-      <ion-card-title>titulo</ion-card-title>
+      <ion-card-subtitle>{{ card.seccion_nombre_api }}</ion-card-subtitle>
+      <ion-card-title>{{ card.title }}</ion-card-title>
     </ion-card-header>
     <ion-card-content>
-      <p>contenido</p>
+
+      <ion-grid>
+        <ion-row>
+          <ion-col>
+            <div>
+              <p>autor: {{ card.author }}</p>
+            </div>
+          </ion-col>
+          <ion-col>
+            <div>
+              <p>fecha: {{ card.pubdate }}</p>
+            </div>
+          </ion-col>
+        </ion-row>
+      </ion-grid>
+
     </ion-card-content>
   </ion-card>
 </ion-content>
